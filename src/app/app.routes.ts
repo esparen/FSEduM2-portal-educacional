@@ -7,9 +7,10 @@ import { DisciplinasComponent } from './features/disciplinas/disciplinas.compone
 
 
 export const routes: Routes = [
-  {path: 'login', component: LoginComponent},
-  {path: 'home', component: HomeComponent},
-  {path: 'alunos', component: AlunosComponent},
-  {path: 'alunos/cadastro', component: AlunosCadastroComponent},
-  {path: 'disciplinas', component: DisciplinasComponent},
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'alunos', component: AlunosComponent },
+  { path: 'alunos/cadastro', component: AlunosCadastroComponent },
+  { path: 'disciplinas', component: DisciplinasComponent },
 ];
