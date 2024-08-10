@@ -1,0 +1,12 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "fullName": "João Silva",
+      "cpf": "123.456.789-00",
+      "email": "joao@example.com",
+      "phone": "123456789",
+      "course": "Matemática"
+    }
+  ]
+}
