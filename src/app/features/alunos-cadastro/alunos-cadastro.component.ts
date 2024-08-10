@@ -27,6 +27,13 @@ export class AlunosCadastroComponent {
       phone: ['', Validators.required],
       course: ['', Validators.required],
     });
+
+    const navigation = this.router.getCurrentNavigation();
+    const state = navigation?.extras.state as { student: any };
+
+    if (state?.student) {
+      this.registrationForm.patchValue(state.student);
+    }
   }
 
   get fullName() {
