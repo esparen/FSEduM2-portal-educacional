@@ -11,6 +11,6 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'alunos', component: AlunosComponent },
-  { path: 'alunos/cadastro', component: AlunosCadastroComponent },
+  { path: 'aluno', component: AlunosCadastroComponent },
   { path: 'disciplinas', component: DisciplinasComponent },
 ];
