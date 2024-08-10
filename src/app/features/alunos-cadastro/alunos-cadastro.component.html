@@ -1,1 +1,69 @@
-<p>alunos-cadastro works!</p>
+<div class="registration-container">
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="fullName">Nome Completo</label>
+      <input
+        id="fullName"
+        type="text"
+        formControlName="fullName"
+        placeholder="Digite o nome completo"
+      />
+      <div *ngIf="fullName.invalid && (fullName.dirty || fullName.touched)" class="error">
+        <div *ngIf="fullName.hasError('required')">Nome completo é obrigatório.</div>
+      </div>
+    </div>
+
+    <div>
+      <label for="cpf">CPF</label>
+      <input
+        id="cpf"
+        type="text"
+        formControlName="cpf"
+        placeholder="Digite o CPF"
+      />
+      <div *ngIf="cpf.invalid && (cpf.dirty || cpf.touched)" class="error">
+        <div *ngIf="cpf.hasError('required')">CPF é obrigatório.</div>
+      </div>
+    </div>
+
+    <div>
+      <label for="email">E-mail</label>
+      <input
+        id="email"
+        type="email"
+        formControlName="email"
+        placeholder="Digite o e-mail"
+      />
+      <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
+        <div *ngIf="email.hasError('required')">E-mail é obrigatório.</div>
+        <div *ngIf="email.hasError('email')">E-mail inválido.</div>
+      </div>
+    </div>
+
+    <div>
+      <label for="phone">Celular</label>
+      <input
+        id="phone"
+        type="text"
+        formControlName="phone"
+        placeholder="Digite o celular"
+      />
+      <div *ngIf="phone.invalid && (phone.dirty || phone.touched)" class="error">
+        <div *ngIf="phone.hasError('required')">Celular é obrigatório.</div>
+      </div>
+    </div>
+
+    <div>
+      <label for="course">Curso</label>
+      <select id="course" formControlName="course">
+        <option value="">Selecione um curso</option>
+        <option *ngFor="let course of courses" [value]="course">{{ course }}</option>
+      </select>
+      <div *ngIf="course.invalid && (course.dirty || course.touched)" class="error">
+        <div *ngIf="course.hasError('required')">Curso é obrigatório.</div>
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="registrationForm.invalid">Salvar</button>
+  </form>
+</div>
