@@ -45,8 +45,7 @@ export class AlunosComponent implements OnInit {
   }
 
   onEdit(student: IStudent) {
-    // Navegar para a tela de cadastro com os dados do aluno
-    //this.router.navigate(['/register'], { queryParams: { id: student.id } });
+    this.router.navigate(['/aluno'], { queryParams: { id: student.id } });
   }
 
   onDelete(student: IStudent) {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   FormBuilder,
@@ -6,7 +6,8 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { StudentService } from '../../shared/services/student.service';
 
 @Component({
   selector: 'app-alunos-cadastro',
@@ -15,24 +16,62 @@ import { Router } from '@angular/router';
   templateUrl: './alunos-cadastro.component.html',
   styleUrl: './alunos-cadastro.component.scss',
 })
-export class AlunosCadastroComponent {
+export class AlunosCadastroComponent implements OnInit {
   registrationForm: FormGroup;
-  courses: string[] = ['Matemática', 'Biologia', 'História', 'Informática'];
+  courses: string[] = [
+    'Matemática',
+    'Biologia',
+    'História',
+    'Informática',
+    'Geografia',
+    'Português',
+    'Física',
+    'Química',
+    'Ciências',
+    'Inglês',
+  ];
 
-  constructor(private fb: FormBuilder, private router: Router) {
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private route: ActivatedRoute,
+    private studentService: StudentService
+  ) {
     this.registrationForm = this.fb.group({
+      id: [null],
       fullName: ['', Validators.required],
       cpf: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       phone: ['', Validators.required],
       course: ['', Validators.required],
     });
+  }
 
-    const navigation = this.router.getCurrentNavigation();
-    const state = navigation?.extras.state as { student: any };
+  ngOnInit() {
+    this.route.queryParams.subscribe((params) => {
+      const id = params['id'];
+      if (id) {
+        this.studentService.getStudent(id).subscribe((student) => {
+          this.registrationForm.patchValue(student);
+        });
+      }
+    });
+  }
 
-    if (state?.student) {
-      this.registrationForm.patchValue(state.student);
+  onSubmit() {
+    if (this.registrationForm.valid) {
+      const student = this.registrationForm.value;
+      if (student.id) {
+        this.studentService.setStudent(student).subscribe(() => {
+          alert('Aluno atualizado com sucesso');
+          this.router.navigate(['/alunos']);
+        });
+      } else {
+        this.studentService.addStudent(student).subscribe(() => {
+          alert('Aluno inserido com sucesso');
+          this.router.navigate(['/alunos']);
+        });
+      }
     }
   }
 
@@ -54,17 +93,5 @@ export class AlunosCadastroComponent {
 
   get course() {
     return this.registrationForm.get('course')!;
-  }
-
-  onSubmit() {
-    if (this.registrationForm.valid) {
-      console.log('Dados do usuário:', this.registrationForm.value);
-      localStorage.setItem('studentData', JSON.stringify(this.registrationForm.value));
-
-      alert('Usuário salvo com sucesso');
-
-      // Redireciona para a tela de listagem de usuários
-      this.router.navigate(['/alunos']);
-    }
   }
 }
