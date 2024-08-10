@@ -2,11 +2,51 @@
   "students": [
     {
       "id": "1",
-      "fullName": "João Silva",
+      "fullName": "João Silva 2",
       "cpf": "123.456.789-00",
       "email": "joao@example.com",
       "phone": "123456789",
       "course": "Matemática"
+    },
+    {
+      "id": "2",
+      "fullName": "Maria Santos",
+      "cpf": "987.654.321-00",
+      "email": "maria@example.com",
+      "phone": "987654321",
+      "course": "Português"
+    },
+    {
+      "id": "3",
+      "fullName": "Pedro Oliveira",
+      "cpf": "456.789.123-00",
+      "email": "pedro@example.com",
+      "phone": "456789123",
+      "course": "História"
+    },
+    {
+      "id": "4",
+      "fullName": "Ana Pereira",
+      "cpf": "789.123.456-00",
+      "email": "ana@example.com",
+      "phone": "789123456",
+      "course": "Geografia"
+    },
+    {
+      "id": "5",
+      "fullName": "Lucas Souza Ramoim",
+      "cpf": "321.654.987-00",
+      "email": "lucas@example.com.br",
+      "phone": "321654987",
+      "course": "Ciências"
+    },
+    {
+      "id": "6",
+      "fullName": "Mariana Costa",
+      "cpf": "654.987.321-00",
+      "email": "mariana@example.com",
+      "phone": "654987321",
+      "course": "Inglês"
     }
   ]
 }
