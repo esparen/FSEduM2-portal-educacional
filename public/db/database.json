@@ -1,0 +1,224 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "fullName": "João Silva 2",
+      "cpf": "123.456.789-00",
+      "email": "joao@example.com",
+      "phone": "123456789",
+      "course": "Matemática"
+    },
+    {
+      "id": "2",
+      "fullName": "Maria Santos",
+      "cpf": "987.654.321-00",
+      "email": "maria@example.com",
+      "phone": "987654321",
+      "course": "Português"
+    },
+    {
+      "id": "3",
+      "fullName": "Pedro Oliveira",
+      "cpf": "456.789.123-00",
+      "email": "pedro@example.com",
+      "phone": "456789123",
+      "course": "História"
+    },
+    {
+      "id": "4",
+      "fullName": "Ana Pereira",
+      "cpf": "789.123.456-00",
+      "email": "ana@example.com",
+      "phone": "789123456",
+      "course": "Geografia"
+    },
+    {
+      "id": "5",
+      "fullName": "Lucas Souza Ramoim",
+      "cpf": "321.654.987-00",
+      "email": "lucas@example.com.br",
+      "phone": "321654987",
+      "course": "Ciências"
+    },
+    {
+      "id": "6",
+      "fullName": "Mariana Costa",
+      "cpf": "654.987.321-00",
+      "email": "mariana@example.com",
+      "phone": "654987321",
+      "course": "Inglês"
+    }
+  ],
+  "courses": [
+    {
+      "name": "Matemática",
+      "semesters": [
+        {
+          "semester": 1,
+          "disciplines": ["Álgebra Linear", "Cálculo I", "Geometria Analítica"]
+        },
+        {
+          "semester": 2,
+          "disciplines": ["Cálculo II", "Probabilidade", "Estatística"]
+        },
+        {
+          "semester": 3,
+          "disciplines": ["Equações Diferenciais", "Matemática Discreta", "Teoria dos Números"]
+        }
+      ]
+    },
+    {
+      "name": "Biologia",
+      "semesters": [
+        {
+          "semester": 1,
+          "disciplines": ["Biologia Celular", "Genética", "Ecologia"]
+        },
+        {
+          "semester": 2,
+          "disciplines": ["Zoologia", "Botânica", "Microbiologia"]
+        },
+        {
+          "semester": 3,
+          "disciplines": ["Fisiologia", "Imunologia", "Biologia Molecular"]
+        }
+      ]
+    },
+    {
+      "name": "História",
+      "semesters": [
+        {
+          "semester": 1,
+          "disciplines": ["História Antiga", "História Medieval", "História Moderna"]
+        },
+        {
+          "semester": 2,
+          "disciplines": ["História Contemporânea", "História do Brasil", "História da América"]
+        },
+        {
+          "semester": 3,
+          "disciplines": ["História da Arte", "História das Religiões", "Metodologia da História"]
+        }
+      ]
+    },
+    {
+      "name": "Informática",
+      "semesters": [
+        {
+          "semester": 1,
+          "disciplines": ["Introdução à Computação", "Programação I", "Algoritmos"]
+        },
+        {
+          "semester": 2,
+          "disciplines": ["Estruturas de Dados", "Programação II", "Redes de Computadores"]
+        },
+        {
+          "semester": 3,
+          "disciplines": ["Banco de Dados", "Sistemas Operacionais", "Engenharia de Software"]
+        }
+      ]
+    },
+    {
+      "name": "Geografia",
+      "semesters": [
+        {
+          "semester": 1,
+          "disciplines": ["Geografia Física", "Geografia Humana", "Cartografia"]
+        },
+        {
+          "semester": 2,
+          "disciplines": ["Geografia do Brasil", "Geopolítica", "Climatologia"]
+        },
+        {
+          "semester": 3,
+          "disciplines": ["Geomorfologia", "Biogeografia", "Geografia Econômica"]
+        }
+      ]
+    },
+    {
+      "name": "Português",
+      "semesters": [
+        {
+          "semester": 1,
+          "disciplines": ["Linguística", "Literatura Brasileira", "Gramática"]
+        },
+        {
+          "semester": 2,
+          "disciplines": ["Literatura Portuguesa", "Produção de Texto", "Filologia"]
+        },
+        {
+          "semester": 3,
+          "disciplines": ["Literatura Comparada", "Análise do Discurso", "Crítica Literária"]
+        }
+      ]
+    },
+    {
+      "name": "Física",
+      "semesters": [
+        {
+          "semester": 1,
+          "disciplines": ["Mecânica Clássica", "Termodinâmica", "Eletromagnetismo"]
+        },
+        {
+          "semester": 2,
+          "disciplines": ["Óptica", "Física Moderna", "Física Experimental"]
+        },
+        {
+          "semester": 3,
+          "disciplines": ["Astrofísica", "Física Quântica", "Física Estatística"]
+        }
+      ]
+    },
+    {
+      "name": "Química",
+      "semesters": [
+        {
+          "semester": 1,
+          "disciplines": ["Química Geral", "Química Orgânica I", "Química Inorgânica"]
+        },
+        {
+          "semester": 2,
+          "disciplines": ["Química Analítica", "Físico-Química", "Bioquímica"]
+        },
+        {
+          "semester": 3,
+          "disciplines": ["Química Orgânica II", "Química Ambiental", "Química Industrial"]
+        }
+      ]
+    },
+    {
+      "name": "Ciências",
+      "semesters": [
+        {
+          "semester": 1,
+          "disciplines": ["Introdução às Ciências", "Métodos Científicos", "Ciências Naturais"]
+        },
+        {
+          "semester": 2,
+          "disciplines": ["Biologia Básica", "Química Básica", "Física Básica"]
+        },
+        {
+          "semester": 3,
+          "disciplines": ["Ciências da Terra", "Ciências Ambientais", "Tecnologia e Sociedade"]
+        }
+      ]
+    },
+    {
+      "name": "Inglês",
+      "semesters": [
+        {
+          "semester": 1,
+          "disciplines": ["Inglês Básico", "Leitura e Compreensão", "Conversação"]
+        },
+        {
+          "semester": 2,
+          "disciplines": ["Inglês Intermediário", "Escrita Criativa", "Gramática Avançada"]
+        },
+        {
+          "semester": 3,
+          "disciplines": ["Inglês Avançado", "Literatura Inglesa", "Tradução e Interpretação"]
+        }
+      ]
+    }
+  ]
+}
