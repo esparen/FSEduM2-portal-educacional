@@ -1,0 +1,12 @@
+<mat-card class="card" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>{{ cardData.title }}</mat-card-title>
+    <!-- <mat-card-subtitle>{{cardData.subtitle}}</mat-card-subtitle> -->
+  </mat-card-header>
+  <img **ngIf="cardData.image" mat-card-image src="{{cardData.image}}" alt="image missing">
+  <mat-card-content>
+    <p>
+      {{ cardData.description }}
+    </p>
+  </mat-card-content>
+</mat-card>

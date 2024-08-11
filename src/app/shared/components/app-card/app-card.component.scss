@@ -1,0 +1,25 @@
+.card {
+  max-width: 400px;
+  border: 1px solid #cae5fd;
+  box-shadow: 9px 7px 5px 0px #b7e9d0;
+  border-radius: 6px;
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  span {
+    margin-top: 8px;
+  }
+}
