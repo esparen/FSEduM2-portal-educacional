@@ -25,7 +25,7 @@
       "cpf": "123.456.789-00",
       "email": "joao@example.com.br",
       "phone": "1234567891111",
-      "courseId": "f920",
+      "courseId": "e3eb",
       "id": "1"
     },
     {
@@ -95,304 +95,378 @@
   ],
   "courses": [
     {
-      "name": "Matemática",
-      "semesters": [
-        {
-          "semester": 1,
-          "disciplines": [
-            "Álgebra Linear",
-            "Cálculo I",
-            "Geometria Analítica"
-          ]
-        },
-        {
-          "semester": 2,
-          "disciplines": [
-            "Cálculo II",
-            "Probabilidade",
-            "Estatística"
-          ]
-        },
-        {
-          "semester": 3,
-          "disciplines": [
-            "Equações Diferenciais",
-            "Matemática Discreta",
-            "Teoria dos Números"
-          ]
-        }
-      ],
-      "id": "f772"
-    },
-    {
+      "id": "e3eb",
       "name": "Biologia",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": [
-            "Biologia Celular",
-            "Genética",
-            "Ecologia"
+          "disciplineIds": [
+            "d10",
+            "d11",
+            "d12"
           ]
         },
         {
           "semester": 2,
-          "disciplines": [
-            "Zoologia",
-            "Botânica",
-            "Microbiologia"
+          "disciplineIds": [
+            "d13",
+            "d14",
+            "d15"
           ]
         },
         {
           "semester": 3,
-          "disciplines": [
-            "Fisiologia",
-            "Imunologia",
-            "Biologia Molecular"
+          "disciplineIds": [
+            "d16",
+            "d17",
+            "d18"
           ]
         }
-      ],
-      "id": "e3eb"
+      ]
     },
     {
+      "id": "664a",
       "name": "História",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": [
-            "História Antiga",
-            "História Medieval",
-            "História Moderna"
+          "disciplineIds": [
+            "d19",
+            "d20",
+            "d21"
           ]
         },
         {
           "semester": 2,
-          "disciplines": [
-            "História Contemporânea",
-            "História do Brasil",
-            "História da América"
+          "disciplineIds": [
+            "d22",
+            "d23",
+            "d24"
           ]
         },
         {
           "semester": 3,
-          "disciplines": [
-            "História da Arte",
-            "História das Religiões",
-            "Metodologia da História"
+          "disciplineIds": [
+            "d25",
+            "d26",
+            "d27"
           ]
         }
-      ],
-      "id": "664a"
+      ]
     },
     {
+      "id": "af0b",
       "name": "Informática",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": [
-            "Introdução à Computação",
-            "Programação I",
-            "Algoritmos"
+          "disciplineIds": [
+            "d28",
+            "d29",
+            "d30"
           ]
         },
         {
           "semester": 2,
-          "disciplines": [
-            "Estruturas de Dados",
-            "Programação II",
-            "Redes de Computadores"
+          "disciplineIds": [
+            "d31",
+            "d32",
+            "d33"
           ]
         },
         {
           "semester": 3,
-          "disciplines": [
-            "Banco de Dados",
-            "Sistemas Operacionais",
-            "Engenharia de Software"
+          "disciplineIds": [
+            "d34",
+            "d35",
+            "d36"
           ]
         }
-      ],
-      "id": "af0b"
+      ]
     },
     {
+      "id": "f920",
       "name": "Geografia",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": [
-            "Geografia Física",
-            "Geografia Humana",
-            "Cartografia"
+          "disciplineIds": [
+            "d37",
+            "d38",
+            "d39"
           ]
         },
         {
           "semester": 2,
-          "disciplines": [
-            "Geografia do Brasil",
-            "Geopolítica",
-            "Climatologia"
+          "disciplineIds": [
+            "d40",
+            "d41",
+            "d42"
           ]
         },
         {
           "semester": 3,
-          "disciplines": [
-            "Geomorfologia",
-            "Biogeografia",
-            "Geografia Econômica"
+          "disciplineIds": [
+            "d43",
+            "d44",
+            "d45"
           ]
         }
-      ],
-      "id": "f920"
+      ]
+    }
+  ],
+  "disciplines": [
+    {
+      "id": "d10",
+      "name": "Biologia Celular",
+      "description": "Introdução à estrutura e função das células.",
+      "courseId": "e3eb",
+      "semester": 1
     },
     {
-      "name": "Português",
-      "semesters": [
-        {
-          "semester": 1,
-          "disciplines": [
-            "Linguística",
-            "Literatura Brasileira",
-            "Gramática"
-          ]
-        },
-        {
-          "semester": 2,
-          "disciplines": [
-            "Literatura Portuguesa",
-            "Produção de Texto",
-            "Filologia"
-          ]
-        },
-        {
-          "semester": 3,
-          "disciplines": [
-            "Literatura Comparada",
-            "Análise do Discurso",
-            "Crítica Literária"
-          ]
-        }
-      ],
-      "id": "4572"
+      "id": "d11",
+      "name": "Genética",
+      "description": "Estudo dos princípios da hereditariedade.",
+      "courseId": "e3eb",
+      "semester": 1
     },
     {
-      "name": "Física",
-      "semesters": [
-        {
-          "semester": 1,
-          "disciplines": [
-            "Mecânica Clássica",
-            "Termodinâmica",
-            "Eletromagnetismo"
-          ]
-        },
-        {
-          "semester": 2,
-          "disciplines": [
-            "Óptica",
-            "Física Moderna",
-            "Física Experimental"
-          ]
-        },
-        {
-          "semester": 3,
-          "disciplines": [
-            "Astrofísica",
-            "Física Quântica",
-            "Física Estatística"
-          ]
-        }
-      ],
-      "id": "9d30"
+      "id": "d12",
+      "name": "Ecologia",
+      "description": "Estudo das interações entre organismos e seu ambiente.",
+      "courseId": "e3eb",
+      "semester": 1
     },
     {
-      "name": "Química",
-      "semesters": [
-        {
-          "semester": 1,
-          "disciplines": [
-            "Química Geral",
-            "Química Orgânica I",
-            "Química Inorgânica"
-          ]
-        },
-        {
-          "semester": 2,
-          "disciplines": [
-            "Química Analítica",
-            "Físico-Química",
-            "Bioquímica"
-          ]
-        },
-        {
-          "semester": 3,
-          "disciplines": [
-            "Química Orgânica II",
-            "Química Ambiental",
-            "Química Industrial"
-          ]
-        }
-      ],
-      "id": "fe0b"
+      "id": "d13",
+      "name": "Zoologia",
+      "description": "Estudo da classificação e características dos animais.",
+      "courseId": "e3eb",
+      "semester": 2
     },
     {
-      "name": "Ciências",
-      "semesters": [
-        {
-          "semester": 1,
-          "disciplines": [
-            "Introdução às Ciências",
-            "Métodos Científicos",
-            "Ciências Naturais"
-          ]
-        },
-        {
-          "semester": 2,
-          "disciplines": [
-            "Biologia Básica",
-            "Química Básica",
-            "Física Básica"
-          ]
-        },
-        {
-          "semester": 3,
-          "disciplines": [
-            "Ciências da Terra",
-            "Ciências Ambientais",
-            "Tecnologia e Sociedade"
-          ]
-        }
-      ],
-      "id": "3d79"
+      "id": "d14",
+      "name": "Botânica",
+      "description": "Estudo das plantas e suas funções.",
+      "courseId": "e3eb",
+      "semester": 2
     },
     {
-      "name": "Inglês",
-      "semesters": [
-        {
-          "semester": 1,
-          "disciplines": [
-            "Inglês Básico",
-            "Leitura e Compreensão",
-            "Conversação"
-          ]
-        },
-        {
-          "semester": 2,
-          "disciplines": [
-            "Inglês Intermediário",
-            "Escrita Criativa",
-            "Gramática Avançada"
-          ]
-        },
-        {
-          "semester": 3,
-          "disciplines": [
-            "Inglês Avançado",
-            "Literatura Inglesa",
-            "Tradução e Interpretação"
-          ]
-        }
-      ],
-      "id": "c4e1"
+      "id": "d15",
+      "name": "Microbiologia",
+      "description": "Estudo dos microrganismos e suas interações.",
+      "courseId": "e3eb",
+      "semester": 2
+    },
+    {
+      "id": "d16",
+      "name": "Fisiologia",
+      "description": "Estudo das funções biológicas dos organismos.",
+      "courseId": "e3eb",
+      "semester": 3
+    },
+    {
+      "id": "d17",
+      "name": "Imunologia",
+      "description": "Estudo do sistema imunológico e suas respostas.",
+      "courseId": "e3eb",
+      "semester": 3
+    },
+    {
+      "id": "d18",
+      "name": "Biologia Molecular",
+      "description": "Estudo das bases moleculares da vida.",
+      "courseId": "e3eb",
+      "semester": 3
+    },
+    {
+      "id": "d19",
+      "name": "História Antiga",
+      "description": "Análise das civilizações antigas e suas culturas.",
+      "courseId": "664a",
+      "semester": 1
+    },
+    {
+      "id": "d20",
+      "name": "História Medieval",
+      "description": "Estudo da Idade Média e seus eventos significativos.",
+      "courseId": "664a",
+      "semester": 1
+    },
+    {
+      "id": "d21",
+      "name": "História Moderna",
+      "description": "Estudo dos eventos históricos modernos.",
+      "courseId": "664a",
+      "semester": 1
+    },
+    {
+      "id": "d22",
+      "name": "História Contemporânea",
+      "description": "Análise dos eventos contemporâneos e suas implicações.",
+      "courseId": "664a",
+      "semester": 2
+    },
+    {
+      "id": "d23",
+      "name": "História do Brasil",
+      "description": "Estudo dos eventos históricos no Brasil.",
+      "courseId": "664a",
+      "semester": 2
+    },
+    {
+      "id": "d24",
+      "name": "História da América",
+      "description": "Estudo da história dos países americanos.",
+      "courseId": "664a",
+      "semester": 2
+    },
+    {
+      "id": "d25",
+      "name": "História da Arte",
+      "description": "Estudo da evolução das artes visuais através dos tempos.",
+      "courseId": "664a",
+      "semester": 3
+    },
+    {
+      "id": "d26",
+      "name": "História das Religiões",
+      "description": "Análise das principais religiões e suas histórias.",
+      "courseId": "664a",
+      "semester": 3
+    },
+    {
+      "id": "d27",
+      "name": "Metodologia da História",
+      "description": "Estudo dos métodos de pesquisa e análise histórica.",
+      "courseId": "664a",
+      "semester": 3
+    },
+    {
+      "id": "d28",
+      "name": "Introdução à Computação",
+      "description": "Fundamentos da ciência da computação.",
+      "courseId": "af0b",
+      "semester": 1
+    },
+    {
+      "id": "d29",
+      "name": "Programação I",
+      "description": "Introdução à programação de computadores.",
+      "courseId": "af0b",
+      "semester": 1
+    },
+    {
+      "id": "d30",
+      "name": "Algoritmos",
+      "description": "Desenvolvimento e análise de algoritmos.",
+      "courseId": "af0b",
+      "semester": 1
+    },
+    {
+      "id": "d31",
+      "name": "Estruturas de Dados",
+      "description": "Estudo das principais estruturas de dados.",
+      "courseId": "af0b",
+      "semester": 2
+    },
+    {
+      "id": "d32",
+      "name": "Programação II",
+      "description": "Técnicas avançadas de programação.",
+      "courseId": "af0b",
+      "semester": 2
+    },
+    {
+      "id": "d33",
+      "name": "Redes de Computadores",
+      "description": "Fundamentos das redes de comunicação de dados.",
+      "courseId": "af0b",
+      "semester": 2
+    },
+    {
+      "id": "d34",
+      "name": "Banco de Dados",
+      "description": "Modelagem e manipulação de bancos de dados.",
+      "courseId": "af0b",
+      "semester": 3
+    },
+    {
+      "id": "d35",
+      "name": "Sistemas Operacionais",
+      "description": "Estudo dos conceitos básicos de sistemas operacionais.",
+      "courseId": "af0b",
+      "semester": 3
+    },
+    {
+      "id": "d36",
+      "name": "Engenharia de Software",
+      "description": "Princípios de desenvolvimento de software.",
+      "courseId": "af0b",
+      "semester": 3
+    },
+    {
+      "id": "d37",
+      "name": "Geografia Física",
+      "description": "Estudo das características físicas da Terra.",
+      "courseId": "f920",
+      "semester": 1
+    },
+    {
+      "id": "d38",
+      "name": "Geografia Humana",
+      "description": "Estudo das interações humanas com o meio ambiente.",
+      "courseId": "f920",
+      "semester": 1
+    },
+    {
+      "id": "d39",
+      "name": "Cartografia",
+      "description": "Técnicas e práticas de mapeamento.",
+      "courseId": "f920",
+      "semester": 1
+    },
+    {
+      "id": "d40",
+      "name": "Geografia do Brasil",
+      "description": "Estudo das características geográficas do Brasil.",
+      "courseId": "f920",
+      "semester": 2
+    },
+    {
+      "id": "d41",
+      "name": "Geopolítica",
+      "description": "Análise das relações políticas e geográficas mundiais.",
+      "courseId": "f920",
+      "semester": 2
+    },
+    {
+      "id": "d42",
+      "name": "Climatologia",
+      "description": "Estudo dos climas e fenômenos climáticos.",
+      "courseId": "f920",
+      "semester": 2
+    },
+    {
+      "id": "d43",
+      "name": "Geomorfologia",
+      "description": "Estudo das formas de relevo e seus processos formadores.",
+      "courseId": "f920",
+      "semester": 3
+    },
+    {
+      "id": "d44",
+      "name": "Biogeografia",
+      "description": "Estudo da distribuição das espécies no espaço e no tempo.",
+      "courseId": "f920",
+      "semester": 3
+    },
+    {
+      "id": "d45",
+      "name": "Geografia Econômica",
+      "description": "Análise das atividades econômicas e seu impacto geográfico.",
+      "courseId": "f920",
+      "semester": 3
     }
   ]
 }

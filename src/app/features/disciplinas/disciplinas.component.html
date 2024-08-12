@@ -1,9 +1,20 @@
-<div *ngIf="course$ | async as course">
-  <h2>Disciplinas do Curso: {{ course.name }}</h2>
-  <div *ngFor="let semester of course.semesters" class="semester-card">
-    <h3>Semestre {{ semester.semester }}</h3>
-    <ul>
-      <li *ngFor="let discipline of semester.disciplines">{{ discipline }}</li>
-    </ul>
-  </div>
+<div class="disciplinas-container">
+  <h2>Disciplinas por Curso e Semestre</h2>
+  <ng-container *ngFor="let group of groupedData">
+    <h3>{{ group.curso.name }}</h3>
+    <div *ngFor="let semestreData of group.semestres" class="curso-semestres">
+      <mat-card class="semestre-card">
+        <mat-card-header>
+          <mat-card-title>Semestre {{ semestreData.semestre }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ul>
+            <li *ngFor="let disciplina of semestreData.disciplinas">
+              {{ disciplina.name }}
+            </li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </ng-container>
 </div>

@@ -1,11 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
+import { IDisciplina } from '../models/disciplina.model';
 
-export interface IDisciplina {
-  semester: number;
-  disciplines: string[];
-}
 
 export interface ICourse {
   id: string;
