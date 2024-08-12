@@ -44,6 +44,10 @@ export class AlunosComponent implements OnInit {
     }
   }
 
+  onInsert() {
+    this.router.navigate(['/aluno']);
+  }
+  
   onEdit(student: IStudent) {
     this.router.navigate(['/aluno'], { queryParams: { id: student.id } });
   }

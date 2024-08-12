@@ -1,5 +1,5 @@
 <div class="registration-container">
-  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+  <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
     <div>
       <label for="fullName">Nome Completo</label>
       <input
@@ -64,6 +64,6 @@
       </div>
     </div>
 
-    <button type="submit" [disabled]="registrationForm.invalid">Salvar</button>
+    <button type="submit" [disabled]="studentForm.invalid">Salvar</button>
   </form>
 </div>

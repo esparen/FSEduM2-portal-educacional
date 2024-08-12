@@ -1,19 +1,22 @@
 {
-   "users": [
+  "users": [
     {
       "email": "admin@edu.com",
       "password": "123",
-      "isAdmin": true
+      "isAdmin": true,
+      "id": "b883"
     },
     {
       "email": "user1@edu.com",
       "password": "123",
-      "isAdmin": false
+      "isAdmin": false,
+      "id": "d63a"
     },
     {
       "email": "user2@edu.com",
       "password": "123",
-      "isAdmin": false
+      "isAdmin": false,
+      "id": "93bf"
     }
   ],
   "students": [
@@ -35,7 +38,7 @@
     },
     {
       "id": "3",
-      "fullName": "Pedro Oliveira",
+      "fullName": "Pedro Oliveira 333",
       "cpf": "456.789.123-00",
       "email": "pedro@example.com",
       "phone": "456789123",
@@ -72,170 +75,300 @@
       "semesters": [
         {
           "semester": 1,
-          "disciplines": ["Álgebra Linear", "Cálculo I", "Geometria Analítica"]
+          "disciplines": [
+            "Álgebra Linear",
+            "Cálculo I",
+            "Geometria Analítica"
+          ]
         },
         {
           "semester": 2,
-          "disciplines": ["Cálculo II", "Probabilidade", "Estatística"]
+          "disciplines": [
+            "Cálculo II",
+            "Probabilidade",
+            "Estatística"
+          ]
         },
         {
           "semester": 3,
-          "disciplines": ["Equações Diferenciais", "Matemática Discreta", "Teoria dos Números"]
+          "disciplines": [
+            "Equações Diferenciais",
+            "Matemática Discreta",
+            "Teoria dos Números"
+          ]
         }
-      ]
+      ],
+      "id": "f772"
     },
     {
       "name": "Biologia",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": ["Biologia Celular", "Genética", "Ecologia"]
+          "disciplines": [
+            "Biologia Celular",
+            "Genética",
+            "Ecologia"
+          ]
         },
         {
           "semester": 2,
-          "disciplines": ["Zoologia", "Botânica", "Microbiologia"]
+          "disciplines": [
+            "Zoologia",
+            "Botânica",
+            "Microbiologia"
+          ]
         },
         {
           "semester": 3,
-          "disciplines": ["Fisiologia", "Imunologia", "Biologia Molecular"]
+          "disciplines": [
+            "Fisiologia",
+            "Imunologia",
+            "Biologia Molecular"
+          ]
         }
-      ]
+      ],
+      "id": "e3eb"
     },
     {
       "name": "História",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": ["História Antiga", "História Medieval", "História Moderna"]
+          "disciplines": [
+            "História Antiga",
+            "História Medieval",
+            "História Moderna"
+          ]
         },
         {
           "semester": 2,
-          "disciplines": ["História Contemporânea", "História do Brasil", "História da América"]
+          "disciplines": [
+            "História Contemporânea",
+            "História do Brasil",
+            "História da América"
+          ]
         },
         {
           "semester": 3,
-          "disciplines": ["História da Arte", "História das Religiões", "Metodologia da História"]
+          "disciplines": [
+            "História da Arte",
+            "História das Religiões",
+            "Metodologia da História"
+          ]
         }
-      ]
+      ],
+      "id": "664a"
     },
     {
       "name": "Informática",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": ["Introdução à Computação", "Programação I", "Algoritmos"]
+          "disciplines": [
+            "Introdução à Computação",
+            "Programação I",
+            "Algoritmos"
+          ]
         },
         {
           "semester": 2,
-          "disciplines": ["Estruturas de Dados", "Programação II", "Redes de Computadores"]
+          "disciplines": [
+            "Estruturas de Dados",
+            "Programação II",
+            "Redes de Computadores"
+          ]
         },
         {
           "semester": 3,
-          "disciplines": ["Banco de Dados", "Sistemas Operacionais", "Engenharia de Software"]
+          "disciplines": [
+            "Banco de Dados",
+            "Sistemas Operacionais",
+            "Engenharia de Software"
+          ]
         }
-      ]
+      ],
+      "id": "af0b"
     },
     {
       "name": "Geografia",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": ["Geografia Física", "Geografia Humana", "Cartografia"]
+          "disciplines": [
+            "Geografia Física",
+            "Geografia Humana",
+            "Cartografia"
+          ]
         },
         {
           "semester": 2,
-          "disciplines": ["Geografia do Brasil", "Geopolítica", "Climatologia"]
+          "disciplines": [
+            "Geografia do Brasil",
+            "Geopolítica",
+            "Climatologia"
+          ]
         },
         {
           "semester": 3,
-          "disciplines": ["Geomorfologia", "Biogeografia", "Geografia Econômica"]
+          "disciplines": [
+            "Geomorfologia",
+            "Biogeografia",
+            "Geografia Econômica"
+          ]
         }
-      ]
+      ],
+      "id": "f920"
     },
     {
       "name": "Português",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": ["Linguística", "Literatura Brasileira", "Gramática"]
+          "disciplines": [
+            "Linguística",
+            "Literatura Brasileira",
+            "Gramática"
+          ]
         },
         {
           "semester": 2,
-          "disciplines": ["Literatura Portuguesa", "Produção de Texto", "Filologia"]
+          "disciplines": [
+            "Literatura Portuguesa",
+            "Produção de Texto",
+            "Filologia"
+          ]
         },
         {
           "semester": 3,
-          "disciplines": ["Literatura Comparada", "Análise do Discurso", "Crítica Literária"]
+          "disciplines": [
+            "Literatura Comparada",
+            "Análise do Discurso",
+            "Crítica Literária"
+          ]
         }
-      ]
+      ],
+      "id": "4572"
     },
     {
       "name": "Física",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": ["Mecânica Clássica", "Termodinâmica", "Eletromagnetismo"]
+          "disciplines": [
+            "Mecânica Clássica",
+            "Termodinâmica",
+            "Eletromagnetismo"
+          ]
         },
         {
           "semester": 2,
-          "disciplines": ["Óptica", "Física Moderna", "Física Experimental"]
+          "disciplines": [
+            "Óptica",
+            "Física Moderna",
+            "Física Experimental"
+          ]
         },
         {
           "semester": 3,
-          "disciplines": ["Astrofísica", "Física Quântica", "Física Estatística"]
+          "disciplines": [
+            "Astrofísica",
+            "Física Quântica",
+            "Física Estatística"
+          ]
         }
-      ]
+      ],
+      "id": "9d30"
     },
     {
       "name": "Química",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": ["Química Geral", "Química Orgânica I", "Química Inorgânica"]
+          "disciplines": [
+            "Química Geral",
+            "Química Orgânica I",
+            "Química Inorgânica"
+          ]
         },
         {
           "semester": 2,
-          "disciplines": ["Química Analítica", "Físico-Química", "Bioquímica"]
+          "disciplines": [
+            "Química Analítica",
+            "Físico-Química",
+            "Bioquímica"
+          ]
         },
         {
           "semester": 3,
-          "disciplines": ["Química Orgânica II", "Química Ambiental", "Química Industrial"]
+          "disciplines": [
+            "Química Orgânica II",
+            "Química Ambiental",
+            "Química Industrial"
+          ]
         }
-      ]
+      ],
+      "id": "fe0b"
     },
     {
       "name": "Ciências",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": ["Introdução às Ciências", "Métodos Científicos", "Ciências Naturais"]
+          "disciplines": [
+            "Introdução às Ciências",
+            "Métodos Científicos",
+            "Ciências Naturais"
+          ]
         },
         {
           "semester": 2,
-          "disciplines": ["Biologia Básica", "Química Básica", "Física Básica"]
+          "disciplines": [
+            "Biologia Básica",
+            "Química Básica",
+            "Física Básica"
+          ]
         },
         {
           "semester": 3,
-          "disciplines": ["Ciências da Terra", "Ciências Ambientais", "Tecnologia e Sociedade"]
+          "disciplines": [
+            "Ciências da Terra",
+            "Ciências Ambientais",
+            "Tecnologia e Sociedade"
+          ]
         }
-      ]
+      ],
+      "id": "3d79"
     },
     {
       "name": "Inglês",
       "semesters": [
         {
           "semester": 1,
-          "disciplines": ["Inglês Básico", "Leitura e Compreensão", "Conversação"]
+          "disciplines": [
+            "Inglês Básico",
+            "Leitura e Compreensão",
+            "Conversação"
+          ]
         },
         {
           "semester": 2,
-          "disciplines": ["Inglês Intermediário", "Escrita Criativa", "Gramática Avançada"]
+          "disciplines": [
+            "Inglês Intermediário",
+            "Escrita Criativa",
+            "Gramática Avançada"
+          ]
         },
         {
           "semester": 3,
-          "disciplines": ["Inglês Avançado", "Literatura Inglesa", "Tradução e Interpretação"]
+          "disciplines": [
+            "Inglês Avançado",
+            "Literatura Inglesa",
+            "Tradução e Interpretação"
+          ]
         }
-      ]
+      ],
+      "id": "c4e1"
     }
   ]
 }
