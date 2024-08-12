@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { map, Observable, of } from 'rxjs';
+import { DisciplineService } from './discipline.service';
+import { CourseService } from './course.service';
+import { IDisciplina } from '../models/disciplina.model';
 
 
 export interface IActivity {
@@ -22,7 +25,9 @@ export interface IExtraCourse {
   providedIn: 'root',
 })
 export class EnrollmentService {
-  constructor() {}
+  constructor(
+    private disciplineService: DisciplineService
+  ) {}
 
   getUpcomingActivities(): Observable<IActivity[]> {
     return of([
@@ -45,11 +50,17 @@ export class EnrollmentService {
   }
 
   getMySubjects(): Observable<ISubject[]> {
-    return of([
-      { name: 'Disciplina A', semester: 1 },
-      { name: 'Disciplina B', semester: 1 },
-      { name: 'Disciplina C', semester: 1 },
-    ]);
+    //TODO: no futuro, buscar a matricula atual do usuário logado, e buscar as disciplinas
+    return this.disciplineService.getDisciplinasByCursoBySemestre('af0b',1).pipe(
+      map((disciplinas: IDisciplina[]) => {
+        return disciplinas.map((disciplina) => {
+          return {
+            name: disciplina.name,
+            semester: disciplina.semester,
+          };
+        });
+      })
+    );
   }
 
   getExtraCourses(): Observable<IExtraCourse[]> {

@@ -1,13 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
+import { IDisciplina } from '../models/disciplina.model';
 
-export interface IDisciplina {
-  semester: number;
-  disciplines: string[];
-}
 
 export interface ICourse {
+  id: string;
   name: string;
   semesters: IDisciplina[];
 }
@@ -15,14 +13,14 @@ export interface ICourse {
 @Injectable({
   providedIn: 'root',
 })
-export class CoursesService {
-  private apiUrl = 'http://localhost:3000/courses';
+export class CourseService {
+  private coursesApiUrl = 'http://localhost:3000/courses';
 
   constructor(private http: HttpClient) {}
 
   getDisciplinesByCourse(courseName: string): Observable<ICourse | undefined> {
     return this.http
-      .get<ICourse[]>(this.apiUrl)
+      .get<ICourse[]>(this.coursesApiUrl)
       .pipe(
         map((courses: ICourse[]) =>
           courses.find((course) => course.name === courseName)
@@ -31,12 +29,16 @@ export class CoursesService {
   }
 
   getCourses(): Observable<ICourse[]> {
-    return this.http.get<ICourse[]>(this.apiUrl);
+    return this.http.get<ICourse[]>(this.coursesApiUrl);
+  }
+
+  getCourseById(id: string): Observable<ICourse> {
+    return this.http.get<ICourse>(`${this.coursesApiUrl}/${id}`);
   }
 
   getCourseNames(): Observable<string[]> {
     return this.http
-      .get<ICourse[]>(this.apiUrl)
+      .get<ICourse[]>(this.coursesApiUrl)
       .pipe(map((courses: ICourse[]) => courses.map((course) => course.name)));
   }
 }

@@ -1,11 +1,24 @@
 .registration-container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
 }
+
+mat-form-field {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 16px;
+}
+
+
+
+
+
 
 label {
   display: block;
