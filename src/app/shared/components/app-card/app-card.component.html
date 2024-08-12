@@ -3,7 +3,9 @@
     <mat-card-title>{{ cardData.title }}</mat-card-title>
     <!-- <mat-card-subtitle>{{cardData.subtitle}}</mat-card-subtitle> -->
   </mat-card-header>
-  <img **ngIf="cardData.image" mat-card-image src="{{cardData.image}}" alt="image missing">
+  <ng-container *ngIf="cardData.image">
+    <img mat-card-image src="{{cardData.image}}" alt="image missing">
+  </ng-container>
   <mat-card-content>
     <p>
       {{ cardData.description }}
