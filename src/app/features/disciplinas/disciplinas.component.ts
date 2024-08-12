@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-import { CoursesService, ICourse, IDisciplina } from '../../shared/services/courses.service';
+import { CourseService, ICourse, IDisciplina } from '../../shared/services/course.service';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -17,7 +17,7 @@ export class DisciplinasComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private courseDataService: CoursesService
+    private courseDataService: CourseService
   ) {}
 
   ngOnInit() {

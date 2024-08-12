@@ -8,28 +8,31 @@ import {
 } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { StudentService } from '../../shared/services/student.service';
+import { CourseService, ICourse } from '../../shared/services/course.service';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatOptionModule } from '@angular/material/core';
 
 @Component({
   selector: 'app-alunos-cadastro',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [
+    ReactiveFormsModule,
+    CommonModule,
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatOptionModule,
+  ],
   templateUrl: './alunos-cadastro.component.html',
   styleUrl: './alunos-cadastro.component.scss',
 })
 export class AlunosCadastroComponent implements OnInit {
   studentForm: FormGroup;
-  courses: string[] = [
-    'Matemática',
-    'Biologia',
-    'História',
-    'Informática',
-    'Geografia',
-    'Português',
-    'Física',
-    'Química',
-    'Ciências',
-    'Inglês',
-  ];
+  courses: ICourse[] = [];
 
   studentId: string | null = null;
 
@@ -37,29 +40,35 @@ export class AlunosCadastroComponent implements OnInit {
     private fb: FormBuilder,
     private router: Router,
     private route: ActivatedRoute,
-    private studentService: StudentService
+    private studentService: StudentService,
+    private courseService: CourseService
   ) {
     this.studentForm = this.fb.group({
       fullName: ['', Validators.required],
       cpf: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       phone: ['', Validators.required],
-      course: ['', Validators.required],
+      courseId: ['', Validators.required],
     });
   }
 
   ngOnInit() {
+    this.loadCourses();
     this.studentId = this.route.snapshot.queryParamMap.get('id');
-    console.log('this.studentId', this.route.snapshot);
+
     if (this.studentId) {
-      console.log('vai carregar aluno id', this.studentId);
-      this.loadStudent(Number(this.studentId));
+      this.loadStudent(this.studentId);
     }
   }
 
-  loadStudent(id: number): void {
-    console.log('id', id);
-    
+  loadCourses() {
+    this.courseService.getCourses().subscribe((courses) => {
+      this.courses = courses;
+      console.log('Courses loaded:', this.courses);
+    });
+  }
+
+  loadStudent(id: string): void {
     this.studentService.getStudentById(id).subscribe((student) => {
       this.studentForm.patchValue(student);
       console.log('student', student);
@@ -69,7 +78,8 @@ export class AlunosCadastroComponent implements OnInit {
   onSubmit() {
     if (this.studentForm.valid) {
       const student = this.studentForm.value;
-      if (student.id) {
+      if (this.studentId) {
+        student.id = this.studentId;
         this.studentService.setStudent(student).subscribe(() => {
           alert('Aluno atualizado com sucesso');
           this.router.navigate(['/alunos']);
@@ -99,7 +109,7 @@ export class AlunosCadastroComponent implements OnInit {
     return this.studentForm.get('phone')!;
   }
 
-  get course() {
-    return this.studentForm.get('course')!;
+  get courseId() {
+    return this.studentForm.get('courseId')!;
   }
 }

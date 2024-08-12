@@ -21,686 +21,378 @@
   ],
   "students": [
     {
-      "id": "1",
-      "fullName": "João Silva 2",
+      "fullName": "João Silva 26",
       "cpf": "123.456.789-00",
-      "email": "joao@example.com",
-      "phone": "123456789",
-      "course": "Matemática"
+      "email": "joao@example.com.br",
+      "phone": "1234567891111",
+      "courseId": "f920",
+      "id": "1"
     },
     {
-      "id": "2",
       "fullName": "Maria Santos",
       "cpf": "987.654.321-00",
       "email": "maria@example.com",
       "phone": "987654321",
-      "course": "Português"
+      "courseId": "c4e1",
+      "id": "2"
     },
     {
-      "id": "3",
       "fullName": "Pedro Oliveira 333",
       "cpf": "456.789.123-00",
       "email": "pedro@example.com",
       "phone": "456789123",
-      "course": "História"
+      "courseId": "664a",
+      "id": "3"
     },
     {
-      "id": "4",
       "fullName": "Ana Pereira",
       "cpf": "789.123.456-00",
       "email": "ana@example.com",
       "phone": "789123456",
-      "course": "Geografia"
+      "courseId": "f920",
+      "id": "4"
     },
     {
-      "id": "5",
       "fullName": "Lucas Souza Ramoim",
       "cpf": "321.654.987-00",
       "email": "lucas@example.com.br",
       "phone": "321654987",
-      "course": "Ciências"
+      "courseId": "3d79",
+      "id": "5"
     },
     {
-      "id": "6",
       "fullName": "Mariana Costa",
       "cpf": "654.987.321-00",
       "email": "mariana@example.com",
       "phone": "654987321",
-      "course": "Inglês"
+      "courseId": "c4e1",
+      "id": "6"
+    },
+    {
+      "fullName": "João Silva 2",
+      "cpf": "123.456.789-00",
+      "email": "joao@example.com",
+      "phone": "123456789",
+      "courseId": "f772",
+      "id": "e05b"
+    },
+    {
+      "id": "da4c",
+      "fullName": "João Silva 2",
+      "cpf": "123.456.789-00",
+      "email": "joao@example.com",
+      "phone": "123456789",
+      "courseId": "f772"
+    },
+    {
+      "id": "f1e3",
+      "fullName": "João Silva 23",
+      "cpf": "123.456.789-00",
+      "email": "joao@example.com",
+      "phone": "123456789",
+      "courseId": "e3eb"
     }
   ],
   "courses": [
     {
-      "id": "f772",
       "name": "Matemática",
       "semesters": [
         {
           "semester": 1,
-          "disciplineIds": ["d1", "d2", "d3"]
+          "disciplines": [
+            "Álgebra Linear",
+            "Cálculo I",
+            "Geometria Analítica"
+          ]
         },
         {
           "semester": 2,
-          "disciplineIds": ["d4", "d5", "d6"]
+          "disciplines": [
+            "Cálculo II",
+            "Probabilidade",
+            "Estatística"
+          ]
         },
         {
           "semester": 3,
-          "disciplineIds": ["d7", "d8", "d9"]
+          "disciplines": [
+            "Equações Diferenciais",
+            "Matemática Discreta",
+            "Teoria dos Números"
+          ]
         }
-      ]
+      ],
+      "id": "f772"
     },
     {
-      "id": "e3eb",
       "name": "Biologia",
       "semesters": [
         {
           "semester": 1,
-          "disciplineIds": ["d10", "d11", "d12"]
+          "disciplines": [
+            "Biologia Celular",
+            "Genética",
+            "Ecologia"
+          ]
         },
         {
           "semester": 2,
-          "disciplineIds": ["d13", "d14", "d15"]
+          "disciplines": [
+            "Zoologia",
+            "Botânica",
+            "Microbiologia"
+          ]
         },
         {
           "semester": 3,
-          "disciplineIds": ["d16", "d17", "d18"]
+          "disciplines": [
+            "Fisiologia",
+            "Imunologia",
+            "Biologia Molecular"
+          ]
         }
-      ]
+      ],
+      "id": "e3eb"
     },
     {
-      "id": "664a",
       "name": "História",
       "semesters": [
         {
           "semester": 1,
-          "disciplineIds": ["d19", "d20", "d21"]
+          "disciplines": [
+            "História Antiga",
+            "História Medieval",
+            "História Moderna"
+          ]
         },
         {
           "semester": 2,
-          "disciplineIds": ["d22", "d23", "d24"]
+          "disciplines": [
+            "História Contemporânea",
+            "História do Brasil",
+            "História da América"
+          ]
         },
         {
           "semester": 3,
-          "disciplineIds": ["d25", "d26", "d27"]
+          "disciplines": [
+            "História da Arte",
+            "História das Religiões",
+            "Metodologia da História"
+          ]
         }
-      ]
+      ],
+      "id": "664a"
     },
     {
-      "id": "af0b",
       "name": "Informática",
       "semesters": [
         {
           "semester": 1,
-          "disciplineIds": ["d28", "d29", "d30"]
+          "disciplines": [
+            "Introdução à Computação",
+            "Programação I",
+            "Algoritmos"
+          ]
         },
         {
           "semester": 2,
-          "disciplineIds": ["d31", "d32", "d33"]
+          "disciplines": [
+            "Estruturas de Dados",
+            "Programação II",
+            "Redes de Computadores"
+          ]
         },
         {
           "semester": 3,
-          "disciplineIds": ["d34", "d35", "d36"]
+          "disciplines": [
+            "Banco de Dados",
+            "Sistemas Operacionais",
+            "Engenharia de Software"
+          ]
         }
-      ]
+      ],
+      "id": "af0b"
     },
     {
-      "id": "f920",
       "name": "Geografia",
       "semesters": [
         {
           "semester": 1,
-          "disciplineIds": ["d37", "d38", "d39"]
+          "disciplines": [
+            "Geografia Física",
+            "Geografia Humana",
+            "Cartografia"
+          ]
         },
         {
           "semester": 2,
-          "disciplineIds": ["d40", "d41", "d42"]
+          "disciplines": [
+            "Geografia do Brasil",
+            "Geopolítica",
+            "Climatologia"
+          ]
         },
         {
           "semester": 3,
-          "disciplineIds": ["d43", "d44", "d45"]
+          "disciplines": [
+            "Geomorfologia",
+            "Biogeografia",
+            "Geografia Econômica"
+          ]
         }
-      ]
+      ],
+      "id": "f920"
     },
     {
-      "id": "4572",
       "name": "Português",
       "semesters": [
         {
           "semester": 1,
-          "disciplineIds": ["d46", "d47", "d48"]
+          "disciplines": [
+            "Linguística",
+            "Literatura Brasileira",
+            "Gramática"
+          ]
         },
         {
           "semester": 2,
-          "disciplineIds": ["d49", "d50", "d51"]
+          "disciplines": [
+            "Literatura Portuguesa",
+            "Produção de Texto",
+            "Filologia"
+          ]
         },
         {
           "semester": 3,
-          "disciplineIds": ["d52", "d53", "d54"]
+          "disciplines": [
+            "Literatura Comparada",
+            "Análise do Discurso",
+            "Crítica Literária"
+          ]
         }
-      ]
+      ],
+      "id": "4572"
     },
     {
-      "id": "9d30",
       "name": "Física",
       "semesters": [
         {
           "semester": 1,
-          "disciplineIds": ["d55", "d56", "d57"]
+          "disciplines": [
+            "Mecânica Clássica",
+            "Termodinâmica",
+            "Eletromagnetismo"
+          ]
         },
         {
           "semester": 2,
-          "disciplineIds": ["d58", "d59", "d60"]
+          "disciplines": [
+            "Óptica",
+            "Física Moderna",
+            "Física Experimental"
+          ]
         },
         {
           "semester": 3,
-          "disciplineIds": ["d61", "d62", "d63"]
+          "disciplines": [
+            "Astrofísica",
+            "Física Quântica",
+            "Física Estatística"
+          ]
         }
-      ]
+      ],
+      "id": "9d30"
     },
     {
-      "id": "fe0b",
       "name": "Química",
       "semesters": [
         {
           "semester": 1,
-          "disciplineIds": ["d64", "d65", "d66"]
+          "disciplines": [
+            "Química Geral",
+            "Química Orgânica I",
+            "Química Inorgânica"
+          ]
         },
         {
           "semester": 2,
-          "disciplineIds": ["d67", "d68", "d69"]
+          "disciplines": [
+            "Química Analítica",
+            "Físico-Química",
+            "Bioquímica"
+          ]
         },
         {
           "semester": 3,
-          "disciplineIds": ["d70", "d71", "d72"]
+          "disciplines": [
+            "Química Orgânica II",
+            "Química Ambiental",
+            "Química Industrial"
+          ]
         }
-      ]
+      ],
+      "id": "fe0b"
     },
     {
-      "id": "3d79",
       "name": "Ciências",
       "semesters": [
         {
           "semester": 1,
-          "disciplineIds": ["d73", "d74", "d75"]
+          "disciplines": [
+            "Introdução às Ciências",
+            "Métodos Científicos",
+            "Ciências Naturais"
+          ]
         },
         {
           "semester": 2,
-          "disciplineIds": ["d76", "d77", "d78"]
+          "disciplines": [
+            "Biologia Básica",
+            "Química Básica",
+            "Física Básica"
+          ]
         },
         {
           "semester": 3,
-          "disciplineIds": ["d79", "d80", "d81"]
+          "disciplines": [
+            "Ciências da Terra",
+            "Ciências Ambientais",
+            "Tecnologia e Sociedade"
+          ]
         }
-      ]
+      ],
+      "id": "3d79"
     },
     {
-      "id": "c4e1",
       "name": "Inglês",
       "semesters": [
         {
           "semester": 1,
-          "disciplineIds": ["d82", "d83", "d84"]
+          "disciplines": [
+            "Inglês Básico",
+            "Leitura e Compreensão",
+            "Conversação"
+          ]
         },
         {
           "semester": 2,
-          "disciplineIds": ["d85", "d86", "d87"]
+          "disciplines": [
+            "Inglês Intermediário",
+            "Escrita Criativa",
+            "Gramática Avançada"
+          ]
         },
         {
           "semester": 3,
-          "disciplineIds": ["d88", "d89", "d90"]
+          "disciplines": [
+            "Inglês Avançado",
+            "Literatura Inglesa",
+            "Tradução e Interpretação"
+          ]
         }
-      ]
-    }
-  ],
-  "disciplines": [
-    {
-      "id": "d1",
-      "name": "Álgebra Linear",
-      "description": "Estudo de vetores, matrizes e transformações lineares."
-    },
-    {
-      "id": "d2",
-      "name": "Cálculo I",
-      "description": "Introdução ao cálculo diferencial e integral de funções de uma variável."
-    },
-    {
-      "id": "d3",
-      "name": "Geometria Analítica",
-      "description": "Análise de figuras geométricas através de sistemas de coordenadas."
-    },
-    {
-      "id": "d4",
-      "name": "Cálculo II",
-      "description": "Continuação do estudo do cálculo diferencial e integral, incluindo séries."
-    },
-    {
-      "id": "d5",
-      "name": "Probabilidade",
-      "description": "Conceitos fundamentais de probabilidade e suas aplicações."
-    },
-    {
-      "id": "d6",
-      "name": "Estatística",
-      "description": "Estudo de métodos estatísticos e análise de dados."
-    },
-    {
-      "id": "d7",
-      "name": "Equações Diferenciais",
-      "description": "Soluções e aplicações de equações diferenciais."
-    },
-    {
-      "id": "d8",
-      "name": "Matemática Discreta",
-      "description": "Fundamentos de matemática discreta e suas aplicações."
-    },
-    {
-      "id": "d9",
-      "name": "Teoria dos Números",
-      "description": "Estudo das propriedades dos números inteiros."
-    },
-    {
-      "id": "d10",
-      "name": "Biologia Celular",
-      "description": "Introdução à estrutura e função das células."
-    },
-    {
-      "id": "d11",
-      "name": "Genética",
-      "description": "Estudo dos princípios da hereditariedade."
-    },
-    {
-      "id": "d12",
-      "name": "Ecologia",
-      "description": "Estudo das interações entre organismos e seu ambiente."
-    },
-    {
-      "id": "d13",
-      "name": "Zoologia",
-      "description": "Estudo da classificação e características dos animais."
-    },
-    {
-      "id": "d14",
-      "name": "Botânica",
-      "description": "Estudo das plantas e suas funções."
-    },
-    {
-      "id": "d15",
-      "name": "Microbiologia",
-      "description": "Estudo dos microrganismos e suas interações."
-    },
-    {
-      "id": "d16",
-      "name": "Fisiologia",
-      "description": "Estudo das funções biológicas dos organismos."
-    },
-    {
-      "id": "d17",
-      "name": "Imunologia",
-      "description": "Estudo do sistema imunológico e suas respostas."
-    },
-    {
-      "id": "d18",
-      "name": "Biologia Molecular",
-      "description": "Estudo das bases moleculares da vida."
-    },
-    {
-      "id": "d19",
-      "name": "História Antiga",
-      "description": "Análise das civilizações antigas e suas culturas."
-    },
-    {
-      "id": "d20",
-      "name": "História Medieval",
-      "description": "Estudo da Idade Média e seus eventos significativos."
-    },
-    {
-      "id": "d21",
-      "name": "História Moderna",
-      "description": "Estudo dos eventos históricos modernos."
-    },
-    {
-      "id": "d22",
-      "name": "História Contemporânea",
-      "description": "Análise dos eventos contemporâneos e suas implicações."
-    },
-    {
-      "id": "d23",
-      "name": "História do Brasil",
-      "description": "Estudo dos eventos históricos no Brasil."
-    },
-    {
-      "id": "d24",
-      "name": "História da América",
-      "description": "Estudo da história dos países americanos."
-    },
-    {
-      "id": "d25",
-      "name": "História da Arte",
-      "description": "Estudo da evolução das artes visuais através dos tempos."
-    },
-    {
-      "id": "d26",
-      "name": "História das Religiões",
-      "description": "Análise das principais religiões e suas histórias."
-    },
-    {
-      "id": "d27",
-      "name": "Metodologia da História",
-      "description": "Estudo dos métodos de pesquisa e análise histórica."
-    },
-    {
-      "id": "d28",
-      "name": "Introdução à Computação",
-      "description": "Fundamentos da ciência da computação."
-    },
-    {
-      "id": "d29",
-      "name": "Programação I",
-      "description": "Introdução à programação de computadores."
-    },
-    {
-      "id": "d30",
-      "name": "Algoritmos",
-      "description": "Desenvolvimento e análise de algoritmos."
-    },
-    {
-      "id": "d31",
-      "name": "Estruturas de Dados",
-      "description": "Estudo das principais estruturas de dados."
-    },
-    {
-      "id": "d32",
-      "name": "Programação II",
-      "description": "Técnicas avançadas de programação."
-    },
-    {
-      "id": "d33",
-      "name": "Redes de Computadores",
-      "description": "Fundamentos das redes de comunicação de dados."
-    },
-    {
-      "id": "d34",
-      "name": "Banco de Dados",
-      "description": "Modelagem e manipulação de bancos de dados."
-    },
-    {
-      "id": "d35",
-      "name": "Sistemas Operacionais",
-      "description": "Estudo dos conceitos básicos de sistemas operacionais."
-    },
-    {
-      "id": "d36",
-      "name": "Engenharia de Software",
-      "description": "Princípios de desenvolvimento de software."
-    },
-    {
-      "id": "d37",
-      "name": "Geografia Física",
-      "description": "Estudo das características físicas da Terra."
-    },
-    {
-      "id": "d38",
-      "name": "Geografia Humana",
-      "description": "Estudo das interações humanas com o meio ambiente."
-    },
-    {
-      "id": "d39",
-      "name": "Cartografia",
-      "description": "Técnicas e práticas de mapeamento."
-    },
-    {
-      "id": "d40",
-      "name": "Geografia do Brasil",
-      "description": "Estudo das características geográficas do Brasil."
-    },
-    {
-      "id": "d41",
-      "name": "Geopolítica",
-      "description": "Análise das relações políticas e geográficas mundiais."
-    },
-    {
-      "id": "d42",
-      "name": "Climatologia",
-      "description": "Estudo dos climas e fenômenos climáticos."
-    },
-    {
-      "id": "d43",
-      "name": "Geomorfologia",
-      "description": "Estudo das formas de relevo e seus processos formadores."
-    },
-    {
-      "id": "d44",
-      "name": "Biogeografia",
-      "description": "Estudo da distribuição das espécies no espaço e no tempo."
-    },
-    {
-      "id": "d45",
-      "name": "Geografia Econômica",
-      "description": "Análise das atividades econômicas e seu impacto geográfico."
-    },
-    {
-      "id": "d46",
-      "name": "Linguística",
-      "description": "Estudo científico da linguagem."
-    },
-    {
-      "id": "d47",
-      "name": "Literatura Brasileira",
-      "description": "Análise das obras e autores brasileiros."
-    },
-    {
-      "id": "d48",
-      "name": "Gramática",
-      "description": "Estudo das regras e estruturas da língua."
-    },
-    {
-      "id": "d49",
-      "name": "Literatura Portuguesa",
-      "description": "Estudo da literatura de Portugal."
-    },
-    {
-      "id": "d50",
-      "name": "Produção de Texto",
-      "description": "Técnicas de redação e composição textual."
-    },
-    {
-      "id": "d51",
-      "name": "Filologia",
-      "description": "Estudo histórico e comparativo das línguas."
-    },
-    {
-      "id": "d52",
-      "name": "Literatura Comparada",
-      "description": "Análise das literaturas em contexto comparativo."
-    },
-    {
-      "id": "d53",
-      "name": "Análise do Discurso",
-      "description": "Estudo das formas e funções do discurso."
-    },
-    {
-      "id": "d54",
-      "name": "Crítica Literária",
-      "description": "Avaliação e interpretação de obras literárias."
-    },
-    {
-      "id": "d55",
-      "name": "Mecânica Clássica",
-      "description": "Estudo dos princípios do movimento e forças."
-    },
-    {
-      "id": "d56",
-      "name": "Termodinâmica",
-      "description": "Estudo das leis do calor e energia."
-    },
-    {
-      "id": "d57",
-      "name": "Eletromagnetismo",
-      "description": "Estudo dos campos elétrico e magnético."
-    },
-    {
-      "id": "d58",
-      "name": "Física Moderna",
-      "description": "Introdução aos conceitos de física do século XX."
-    },
-    {
-      "id": "d59",
-      "name": "Óptica",
-      "description": "Estudo da luz e fenômenos ópticos."
-    },
-    {
-      "id": "d60",
-      "name": "Mecânica Quântica",
-      "description": "Fundamentos da teoria quântica."
-    },
-    {
-      "id": "d61",
-      "name": "Astrofísica",
-      "description": "Estudo dos corpos celestes e fenômenos astronômicos."
-    },
-    {
-      "id": "d62",
-      "name": "Física Experimental",
-      "description": "Laboratórios e experiências em física."
-    },
-    {
-      "id": "d63",
-      "name": "Relatividade",
-      "description": "Teorias da relatividade de Einstein."
-    },
-    {
-      "id": "d64",
-      "name": "Química Geral",
-      "description": "Fundamentos da química e suas aplicações."
-    },
-    {
-      "id": "d65",
-      "name": "Química Orgânica",
-      "description": "Estudo dos compostos de carbono."
-    },
-    {
-      "id": "d66",
-      "name": "Química Inorgânica",
-      "description": "Estudo dos compostos inorgânicos."
-    },
-    {
-      "id": "d67",
-      "name": "Química Analítica",
-      "description": "Técnicas de análise química qualitativa e quantitativa."
-    },
-    {
-      "id": "d68",
-      "name": "Fisico-Química",
-      "description": "Estudo das propriedades físicas e químicas da matéria."
-    },
-    {
-      "id": "d69",
-      "name": "Bioquímica",
-      "description": "Estudo das moléculas e processos químicos em organismos vivos."
-    },
-    {
-      "id": "d70",
-      "name": "Química Ambiental",
-      "description": "Estudo dos processos químicos no ambiente."
-    },
-    {
-      "id": "d71",
-      "name": "Química Industrial",
-      "description": "Aplicações da química nos processos industriais."
-    },
-    {
-      "id": "d72",
-      "name": "Laboratório de Química",
-      "description": "Práticas e experimentos em química."
-    },
-    {
-      "id": "d73",
-      "name": "Introdução às Ciências",
-      "description": "Visão geral dos principais conceitos científicos."
-    },
-    {
-      "id": "d74",
-      "name": "Ciências da Terra",
-      "description": "Estudo dos processos geológicos e suas interações."
-    },
-    {
-      "id": "d75",
-      "name": "Ciências do Espaço",
-      "description": "Exploração dos fenômenos espaciais e astronômicos."
-    },
-    {
-      "id": "d76",
-      "name": "Ciências Ambientais",
-      "description": "Estudo das interações ambientais e sustentabilidade."
-    },
-    {
-      "id": "d77",
-      "name": "Ciências da Vida",
-      "description": "Estudo dos processos biológicos e evolutivos."
-    },
-    {
-      "id": "d78",
-      "name": "Ciências dos Materiais",
-      "description": "Estudo das propriedades e aplicações dos materiais."
-    },
-    {
-      "id": "d79",
-      "name": "Ciências Forenses",
-      "description": "Aplicação de métodos científicos na investigação criminal."
-    },
-    {
-      "id": "d80",
-      "name": "Ciências da Computação",
-      "description": "Estudo dos fundamentos e aplicações da computação."
-    },
-    {
-      "id": "d81",
-      "name": "Ciências Cognitivas",
-      "description": "Estudo dos processos mentais e inteligência artificial."
-    },
-    {
-      "id": "d82",
-      "name": "Inglês Básico",
-      "description": "Introdução aos fundamentos da língua inglesa."
-    },
-    {
-      "id": "d83",
-      "name": "Inglês Intermediário",
-      "description": "Desenvolvimento das habilidades de comunicação em inglês."
-    },
-    {
-      "id": "d84",
-      "name": "Inglês Avançado",
-      "description": "Aperfeiçoamento das competências linguísticas em inglês."
-    },
-    {
-      "id": "d85",
-      "name": "Conversação em Inglês",
-      "description": "Prática de conversação e fluência em inglês."
-    },
-    {
-      "id": "d86",
-      "name": "Gramática Inglesa",
-      "description": "Estudo das estruturas gramaticais da língua inglesa."
-    },
-    {
-      "id": "d87",
-      "name": "Literatura Inglesa",
-      "description": "Estudo das obras literárias de língua inglesa."
-    },
-    {
-      "id": "d88",
-      "name": "Tradução em Inglês",
-      "description": "Princípios e práticas de tradução para o inglês."
-    },
-    {
-      "id": "d89",
-      "name": "Escrita Acadêmica em Inglês",
-      "description": "Técnicas de redação acadêmica na língua inglesa."
-    },
-    {
-      "id": "d90",
-      "name": "História da Língua Inglesa",
-      "description": "Estudo da evolução histórica do inglês."
+      ],
+      "id": "c4e1"
     }
   ]
 }

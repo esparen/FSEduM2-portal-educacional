@@ -7,6 +7,7 @@
     />
     <button (click)="onSearch()">Pesquisar</button>
   </div>
+
   <div class="list">
     <table>
     <thead>
@@ -25,7 +26,7 @@
         <td>{{ student.fullName }}</td>
         <td>{{ student.cpf }}</td>
         <td>{{ student.email }}</td>
-        <td>{{ student.course }}</td>
+        <td>{{ student.courseName }}</td>
         <td>
           <button (click)="onEdit(student)">Editar</button>
           <button (click)="onDelete(student)">Excluir</button>
@@ -33,4 +34,5 @@
       </tr>
     </tbody>
   </table>
+
 </div>

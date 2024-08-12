@@ -3,12 +3,12 @@ import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 export interface IStudent {
-  id?: number;
+  id?: string;
   fullName: string;
   cpf: string;
   email: string;
   phone: string;
-  course: string;
+  courseId: string;
 }
 
 
@@ -24,7 +24,7 @@ export class StudentService {
     return this.http.get<IStudent[]>(this.apiUrl);
   }
 
-  getStudentById(id: number): Observable<IStudent> {
+  getStudentById(id: string): Observable<IStudent> {
     return this.http.get<IStudent>(`${this.apiUrl}/${id}`);
   }
 
@@ -36,7 +36,7 @@ export class StudentService {
     return this.http.put<IStudent>(`${this.apiUrl}/${student.id}`, student);
   }
 
-  deleteStudent(id: number): Observable<void> {
+  deleteStudent(id: string): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }
