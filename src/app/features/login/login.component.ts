@@ -36,12 +36,14 @@ export class LoginComponent {
   onSubmit() {
     if (this.loginForm.valid) {
       const { email, password } = this.loginForm.value;
-      if (this.authService.login(email, password)) {
-        alert('Login bem-sucedido!');
-        this.router.navigate(['/home']);
-      } else {
-        alert('Usuário ou senha inválidos');
-      }
+      this.authService.login(email, password).subscribe((success) => {
+        if (success) {
+          alert('Login bem-sucedido!');
+          this.router.navigate(['/home']);
+        } else {
+          alert('Usuário ou senha inválidos');
+        }
+      });
     }
   }
 
