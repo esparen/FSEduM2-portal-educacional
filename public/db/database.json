@@ -1,4 +1,21 @@
 {
+   "users": [
+    {
+      "email": "admin@edu.com",
+      "password": "123",
+      "isAdmin": true
+    },
+    {
+      "email": "user1@edu.com",
+      "password": "123",
+      "isAdmin": false
+    },
+    {
+      "email": "user2@edu.com",
+      "password": "123",
+      "isAdmin": false
+    }
+  ],
   "students": [
     {
       "id": "1",
