@@ -20,16 +20,15 @@ export class StudentService {
 
   constructor(private http: HttpClient) {}
 
-  
   getStudents(): Observable<IStudent[]> {
     return this.http.get<IStudent[]>(this.apiUrl);
   }
 
-  getStudent(id: number): Observable<IStudent> {
+  getStudentById(id: number): Observable<IStudent> {
     return this.http.get<IStudent>(`${this.apiUrl}/${id}`);
   }
 
-  addStudent(student: IStudent): Observable<IStudent> {
+  addStudent(student: Omit<IStudent, 'id'>): Observable<IStudent> {
     return this.http.post<IStudent>(this.apiUrl, student);
   }
 

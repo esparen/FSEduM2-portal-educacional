@@ -17,7 +17,7 @@ import { StudentService } from '../../shared/services/student.service';
   styleUrl: './alunos-cadastro.component.scss',
 })
 export class AlunosCadastroComponent implements OnInit {
-  registrationForm: FormGroup;
+  studentForm: FormGroup;
   courses: string[] = [
     'Matemática',
     'Biologia',
@@ -31,14 +31,15 @@ export class AlunosCadastroComponent implements OnInit {
     'Inglês',
   ];
 
+  studentId: string | null = null;
+
   constructor(
     private fb: FormBuilder,
     private router: Router,
     private route: ActivatedRoute,
     private studentService: StudentService
   ) {
-    this.registrationForm = this.fb.group({
-      id: [null],
+    this.studentForm = this.fb.group({
       fullName: ['', Validators.required],
       cpf: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -48,19 +49,26 @@ export class AlunosCadastroComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.route.queryParams.subscribe((params) => {
-      const id = params['id'];
-      if (id) {
-        this.studentService.getStudent(id).subscribe((student) => {
-          this.registrationForm.patchValue(student);
-        });
-      }
+    this.studentId = this.route.snapshot.queryParamMap.get('id');
+    console.log('this.studentId', this.route.snapshot);
+    if (this.studentId) {
+      console.log('vai carregar aluno id', this.studentId);
+      this.loadStudent(Number(this.studentId));
+    }
+  }
+
+  loadStudent(id: number): void {
+    console.log('id', id);
+    
+    this.studentService.getStudentById(id).subscribe((student) => {
+      this.studentForm.patchValue(student);
+      console.log('student', student);
     });
   }
 
   onSubmit() {
-    if (this.registrationForm.valid) {
-      const student = this.registrationForm.value;
+    if (this.studentForm.valid) {
+      const student = this.studentForm.value;
       if (student.id) {
         this.studentService.setStudent(student).subscribe(() => {
           alert('Aluno atualizado com sucesso');
@@ -76,22 +84,22 @@ export class AlunosCadastroComponent implements OnInit {
   }
 
   get fullName() {
-    return this.registrationForm.get('fullName')!;
+    return this.studentForm.get('fullName')!;
   }
 
   get cpf() {
-    return this.registrationForm.get('cpf')!;
+    return this.studentForm.get('cpf')!;
   }
 
   get email() {
-    return this.registrationForm.get('email')!;
+    return this.studentForm.get('email')!;
   }
 
   get phone() {
-    return this.registrationForm.get('phone')!;
+    return this.studentForm.get('phone')!;
   }
 
   get course() {
-    return this.registrationForm.get('course')!;
+    return this.studentForm.get('course')!;
   }
 }
