@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from '../../shared/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,11 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private router: Router) {
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private authService: AuthService
+  ) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]],
@@ -30,7 +35,13 @@ export class LoginComponent {
 
   onSubmit() {
     if (this.loginForm.valid) {
-      this.router.navigate(['/home']);
+      const { email, password } = this.loginForm.value;
+      if (this.authService.login(email, password)) {
+        alert('Login bem-sucedido!');
+        this.router.navigate(['/home']);
+      } else {
+        alert('Usuário ou senha inválidos');
+      }
     }
   }
 
