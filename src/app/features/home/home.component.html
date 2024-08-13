@@ -1,0 +1,33 @@
+<div class="home">
+  <h1>Bem-vindo ao Portal do Aluno</h1>
+
+  <section id="activities" >
+    <h2>Próximas Atividades</h2>
+    <div *ngIf="upcomingActivities$ | async as activities" class="card_container">
+      <app-card
+        *ngFor="let activity of activities"
+        [cardData]="getActivityCardData(activity)"
+      ></app-card>
+    </div>
+  </section>
+
+  <section id="subjects" >
+    <h2>Minhas Disciplinas</h2>
+    <div *ngIf="mySubjects$ | async as subjects" class="card_container">
+      <app-card
+        *ngFor="let subject of subjects"
+        [cardData]="getSubjectCardData(subject)"
+      ></app-card>
+    </div>
+  </section>
+
+  <section id="extra-courses">
+    <h2>Cursos Extras</h2>
+    <div *ngIf="extraCourses$ | async as courses" class="card_container">
+      <app-card
+        *ngFor="let course of courses"
+        [cardData]="getExtraCourseCardData(course)"
+      ></app-card>
+    </div>
+  </section>
+</div>

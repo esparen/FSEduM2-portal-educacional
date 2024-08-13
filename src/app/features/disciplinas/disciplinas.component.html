@@ -1,0 +1,9 @@
+<div *ngIf="course$ | async as course">
+  <h2>Disciplinas do Curso: {{ course.name }}</h2>
+  <div *ngFor="let semester of course.semesters" class="semester-card">
+    <h3>Semestre {{ semester.semester }}</h3>
+    <ul>
+      <li *ngFor="let discipline of semester.disciplines">{{ discipline }}</li>
+    </ul>
+  </div>
+</div>
