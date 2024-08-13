@@ -1,5 +1,15 @@
 .home {
   padding: 20px;
+  width: 100%;
+
+  mat-toolbar {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  #welcome-toolbar {
+    background-color: #b7e9d0;
+  }
 
   section {
     margin-bottom: 30px;
@@ -19,6 +29,23 @@
   justify-content: space-around;
   width: 100%;
   gap: 20px; 
+}
+
+.activity-card,
+.subject-card,
+.course-card {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #cae5fd;
+  box-shadow: 9px 7px 5px 0px #b7e9d0;
+  border-radius: 6px;
+
+  
+  
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
 }
 
 /* Estilos para dispositivos de até 480px */
