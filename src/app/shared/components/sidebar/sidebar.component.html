@@ -1,1 +1,26 @@
-<p>sidebar works!</p>
+<mat-nav-list class="mat-toolbar">
+  <button mat-list-item (click)="navigateTo('/disciplinas')">
+    <mat-icon>book</mat-icon>
+    <span>Disciplinas</span>
+  </button>
+
+  <button mat-list-item disabled>
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="assignment"></mat-icon>
+    <span>Atividades Avaliativas</span>
+  </button>
+
+  <button mat-list-item disabled>
+    <mat-icon>request_page</mat-icon>
+    <span>Solicitações</span>
+  </button>
+
+  <button mat-list-item disabled>
+    <mat-icon>local_library</mat-icon>
+    <span>Biblioteca Online</span>
+  </button>
+
+  <button mat-list-item *ngIf="isAdmin" (click)="navigateTo('/alunos')">
+    <mat-icon>people</mat-icon>
+    <span>Usuários</span>
+  </button>
+</mat-nav-list>

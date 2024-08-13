@@ -1,0 +1,75 @@
+<div class="registration-container">
+  <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Nome Completo</mat-label>
+      <input
+        matInput
+        id="fullName"
+        type="text"
+        formControlName="fullName"
+        placeholder="Digite o nome completo"
+      />
+      <mat-error *ngIf="fullName.invalid && (fullName.dirty || fullName.touched)">
+        <div *ngIf="fullName.hasError('required')">Nome completo é obrigatório.</div>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>CPF</mat-label>
+      <input
+        matInput
+        id="cpf"
+        type="text"
+        formControlName="cpf"
+        placeholder="Digite o CPF"
+      />
+      <mat-error *ngIf="cpf.invalid && (cpf.dirty || cpf.touched)">
+        <div *ngIf="cpf.hasError('required')">CPF é obrigatório.</div>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>E-mail</mat-label>
+      <input
+        matInput
+        id="email"
+        type="email"
+        formControlName="email"
+        placeholder="Digite o e-mail"
+      />
+      <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">
+        <div *ngIf="email.hasError('required')">E-mail é obrigatório.</div>
+        <div *ngIf="email.hasError('email')">E-mail inválido.</div>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Celular</mat-label>
+      <input
+        matInput
+        id="phone"
+        type="text"
+        formControlName="phone"
+        placeholder="Digite o celular"
+      />
+      <mat-error *ngIf="phone.invalid && (phone.dirty || phone.touched)">
+        <div *ngIf="phone.hasError('required')">Celular é obrigatório.</div>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Curso</mat-label>
+      <mat-select id="courseId" formControlName="courseId">
+        <mat-option value="">Selecione um curso</mat-option>
+        <mat-option *ngFor="let course of courses" [value]="course.id">
+          {{ course.name }}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="courseId.invalid && (courseId.dirty || courseId.touched)">
+        <div *ngIf="courseId.hasError('required')">Curso é obrigatório.</div>
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" type="submit" [disabled]="studentForm.invalid">Salvar</button>
+  </form>
+</div>
