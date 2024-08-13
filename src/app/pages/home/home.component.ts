@@ -1,13 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
 import { AppCardComponent, ICardData } from '../../shared/components/app-card/app-card.component'
 import { IActivity, IExtraCourse, ISubject, EnrollmentService } from '../../shared/services/enrollment.service';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [AppCardComponent, CommonModule],
+  imports: [
+    AppCardComponent,
+    CommonModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatDividerModule,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

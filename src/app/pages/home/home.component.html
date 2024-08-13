@@ -1,33 +1,55 @@
 <div class="home">
-  <h1>Bem-vindo ao Portal do Aluno</h1>
+  <mat-toolbar id="welcome-toolbar">
+    <span>Bem-vindo ao Portal do Aluno</span>
+  </mat-toolbar>
 
   <section id="activities" >
     <h2>Próximas Atividades</h2>
+    <mat-divider></mat-divider>
     <div *ngIf="upcomingActivities$ | async as activities" class="card_container">
-      <app-card
+      <mat-card *ngFor="let activity of activities" class="activity-card" >
+        <mat-card-header>
+          <mat-card-title>{{ getActivityCardData(activity).title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ getActivityCardData(activity).description }}</p>
+        </mat-card-content>
+      </mat-card>
+      
+      <!-- <app-card
         *ngFor="let activity of activities"
         [cardData]="getActivityCardData(activity)"
-      ></app-card>
+      ></app-card> -->
     </div>
   </section>
 
   <section id="subjects" >
     <h2>Minhas Disciplinas</h2>
+    <mat-divider></mat-divider>
     <div *ngIf="mySubjects$ | async as subjects" class="card_container">
-      <app-card
-        *ngFor="let subject of subjects"
-        [cardData]="getSubjectCardData(subject)"
-      ></app-card>
+      <mat-card *ngFor="let subject of subjects" class="subject-card">
+        <mat-card-header>
+          <mat-card-title>{{ getSubjectCardData(subject).title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ getSubjectCardData(subject).description }}</p>
+        </mat-card-content>
+      </mat-card>
     </div>
   </section>
 
   <section id="extra-courses">
     <h2>Cursos Extras</h2>
+    <mat-divider></mat-divider>
     <div *ngIf="extraCourses$ | async as courses" class="card_container">
-      <app-card
-        *ngFor="let course of courses"
-        [cardData]="getExtraCourseCardData(course)"
-      ></app-card>
+      <mat-card *ngFor="let course of courses" class="course-card">
+        <mat-card-header>
+          <mat-card-title>{{ getExtraCourseCardData(course).title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ getExtraCourseCardData(course).description }}</p>
+        </mat-card-content>
+      </mat-card>
     </div>
   </section>
 </div>
